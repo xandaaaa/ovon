@@ -12,7 +12,7 @@ class OVONSim(HabitatSim):
         self.recompute_navmesh(
             self.pathfinder,
             self.navmesh_settings,
-            include_static_objects=False,
+            # include_static_objects=False,
         )
         self.curr_scene_goals = {}
 
@@ -39,6 +39,6 @@ class OVONSim(HabitatSim):
             self.recompute_navmesh(
                 self.pathfinder,
                 self.navmesh_settings,
-                include_static_objects=False,
+                # include_static_objects=False,
             )
             self.curr_scene_goals = {}

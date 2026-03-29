@@ -575,7 +575,7 @@ class VERPIRLNavTrainer(VERTrainer):
                     obj_id = infos[i][OVONObjectGoalID.cls_uuid]
                     if not hasattr(self, "objectgoal_vocab"):
                         cache = load_pickle(
-                            "data/clip_embeddings/ovon_stretch_final_cache.pkl"
+                            "/cluster/project/cvg/students/epadilla/frontiernet_internal/model_weights/clip.pkl"
                         )
                         self.objectgoal_vocab = sorted(list(cache.keys()))
                     id_to_name = self.objectgoal_vocab

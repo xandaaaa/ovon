@@ -6,16 +6,14 @@ import numpy as np
 from gym import spaces
 from habitat.core.registry import registry
 from habitat.core.simulator import RGBSensor, Sensor, SensorTypes, Simulator
-from habitat.core.utils import try_cv2_import
 from habitat.sims.habitat_simulator.habitat_simulator import HabitatSim
 from habitat.tasks.nav.nav import NavigationEpisode
 
 from ovon.utils.utils import load_pickle
+import cv2
 
 if TYPE_CHECKING:
     from omegaconf import DictConfig
-
-cv2 = try_cv2_import()
 
 
 @registry.register_sensor

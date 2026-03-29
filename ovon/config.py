@@ -28,7 +28,9 @@ cs = ConfigStore.instance()
 class ClipObjectGoalSensorConfig(LabSensorConfig):
     type: str = "ClipObjectGoalSensor"
     prompt: str = "Find and go to {category}"
-    cache: str = "data/clip_embeddings/ovon_hm3d_cache.pkl"
+    cache: str = (
+        "/cluster/project/cvg/students/epadilla/frontiernet_internal/model_weights/clip.pkl"
+    )
 
 
 @dataclass
@@ -107,7 +109,9 @@ class ImageNavRewardMeasurementConfig(MeasurementConfig):
 @dataclass
 class OVONObjectGoalIDMeasurementConfig(MeasurementConfig):
     type: str = "OVONObjectGoalID"
-    cache: str = "data/clip_embeddings/ovon_stretch_final_cache.pkl"
+    cache: str = (
+        "/cluster/project/cvg/students/epadilla/frontiernet_internal/model_weights/clip.pkl"
+    )
 
 
 ##########################################################################
