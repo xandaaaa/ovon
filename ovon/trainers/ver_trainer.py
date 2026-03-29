@@ -4,7 +4,7 @@ import torch
 from habitat.utils import profiling_wrapper
 from habitat_baselines import VERTrainer
 from habitat_baselines.rl.ver.task_enums import ReportWorkerTasks
-from habitat_baselines.rl.ver.timing import Timing
+from habitat_baselines.utils.timing import Timing
 from habitat_baselines.utils.common import cosine_decay, inference_mode
 from torch.optim.lr_scheduler import LambdaLR
 

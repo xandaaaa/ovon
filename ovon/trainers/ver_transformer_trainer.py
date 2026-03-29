@@ -40,7 +40,7 @@ from habitat_baselines.rl.ver.environment_worker import (
 from habitat_baselines.rl.ver.preemption_decider import PreemptionDeciderWorker
 from habitat_baselines.rl.ver.report_worker import ReportWorker
 from habitat_baselines.rl.ver.task_enums import ReportWorkerTasks
-from habitat_baselines.rl.ver.timing import Timing
+from habitat_baselines.utils.timing import Timing
 from habitat_baselines.rl.ver.ver_rollout_storage import VERRolloutStorage
 from habitat_baselines.rl.ver.worker_common import (
     InferenceWorkerSync,
